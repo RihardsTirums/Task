@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multiple Rows Form</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+<form>
+	<table>
+		<thead>
+		<tr>
+			<td>Name</td>
+			<td>Email</td>
+			<td>Phone Number</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td><input type="text" name="name[]" /></td>
+			<td><input type="text" name="email[]" /></td>
+			<td><input type="text" name="phone[]" /></td>
+		</tr>
+		</tbody>
+	</table>
+	<br>
+	<input type="button" id="add_another" value="Add Another Line">
+	<input type="submit" value="Submit">
+</form>
+<br>
+<div id="ajax_results_here"></div>
+</body>
+</html>
